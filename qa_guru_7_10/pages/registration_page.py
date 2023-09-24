@@ -7,7 +7,6 @@ class RegistrationPage:
     def open(self):
         browser.open('/automation-practice-form')
 
-    #WHEN
     def fill_first_name(self, value):
         browser.element('#firstName').should(be.blank).type(value)
         return self
